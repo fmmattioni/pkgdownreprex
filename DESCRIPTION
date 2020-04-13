@@ -1,0 +1,20 @@
+Package: pkgdownreprex
+Title: Pkgdown Reprex
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Felipe",
+           family = "Mattioni Maturana",
+           role = c("aut", "cre"),
+           email = "felipe.mattioni@med.uni-tuebingen.de",
+           comment = c(ORCID = "0000-0002-4221-6104"))
+Description: Pkgdown repository to test 'pkgdown' rendering.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+Suggests: 
+    knitr,
+    rmarkdown,
+    stringi
+VignetteBuilder: knitr

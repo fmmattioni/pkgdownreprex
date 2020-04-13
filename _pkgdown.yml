@@ -1,0 +1,16 @@
+destination: docs
+
+template:
+  params:
+    bootswatch: sandstone
+    ganalytics: UA-126092763-1
+
+authors:
+  Felipe Mattioni Maturana:
+    href: https://fmattioni.me
+
+toc:
+  depth: 3
+
+development:
+  mode: unreleased

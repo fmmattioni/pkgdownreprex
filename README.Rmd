@@ -1,0 +1,58 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# pkgdownreprex
+
+<!-- badges: start -->
+[![Title](https://img.shields.io/badge/pkgdown-reprex-green.svg)]()
+[![R build status](https://github.com/fmmattioni/pkgdownreprex/workflows/R-CMD-check/badge.svg)](https://github.com/fmmattioni/pkgdownreprex/actions)
+<!-- badges: end -->
+
+The goal of `pkgdownreprex` is to test different settings from the `pkgdown` package for rendering the website. It is algo going to be used in case a `reprex` is neeeded to be shared with the developers.
+
+## Package creation workflow:
+
+1. `usethis::create_package()`
+
+1. `usethis::use_mit_license()`
+
+1. `gitignore::gi_fetch_templates(template_name = c("macOS", "R"), copy_to_clipboard = TRUE)`
+
+    1. Pasted it into `.gitignore`
+
+1. `usethis::use_readme_rmd()`
+
+1. `usethis::use_pkgdown()`
+
+1. `usethis::use_vignette("pkgdownreprex")`
+
+1. `usethis::use_git()`
+
+    1. In the terminal: `git remote add origin https://github.com/fmmattioni/pkgdownreprex.git`
+
+1. `usethis::use_github_actions()`
+
+1. `usethis::use_github_action("pkgdown")`
+
+```{r echo = FALSE}
+library(usethis)
+library(pkgdown)
+```
+
+<details><summary>Session info</summary>
+```{r}
+sessioninfo::session_info()
+```
+</details>

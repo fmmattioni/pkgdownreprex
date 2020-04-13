@@ -1,0 +1,35 @@
+---
+title: "pkgdownreprex"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{pkgdownreprex}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  echo = FALSE
+)
+```
+
+# Heading 1
+
+```{r results='asis'}
+stringi::stri_rand_lipsum(nparagraphs = 2)
+```
+
+## Heading 1.1
+
+```{r results='asis'}
+stringi::stri_rand_lipsum(nparagraphs = 3)
+```
+
+# Heading 2
+
+```{r results='asis'}
+stringi::stri_rand_lipsum(nparagraphs = 2)
+```
+
