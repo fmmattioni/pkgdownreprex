@@ -30,13 +30,13 @@ in case a `reprex` is needed to be shared with the developers.
 6.  `usethis::use_vignette("pkgdownreprex")`
 
 7.  `usethis::use_git()`
-    
-    1.  In the terminal: `git remote add origin
-        https://github.com/fmmattioni/pkgdownreprex.git`
 
-8.  `usethis::use_github_actions()`
+8.  `usethis::use_git_remote(name = "origin", url =
+    "https://github.com/fmmattioni/pkgdownreprex.git")`
 
-9.  `usethis::use_github_action("pkgdown")`
+9.  `usethis::use_github_actions()`
+
+10. `usethis::use_github_action("pkgdown")`
 
 <details>
 

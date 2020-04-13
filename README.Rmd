@@ -38,7 +38,7 @@ The goal of `pkgdownreprex` is to test different settings from the `pkgdown` pac
 
 1. `usethis::use_git()`
 
-    1. In the terminal: `git remote add origin https://github.com/fmmattioni/pkgdownreprex.git`
+1. `usethis::use_git_remote(name = "origin", url = "https://github.com/fmmattioni/pkgdownreprex.git")`
 
 1. `usethis::use_github_actions()`
 
