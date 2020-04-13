@@ -73,20 +73,14 @@
 <a href="#pkgdownreprex" class="anchor"></a>pkgdownreprex</h1></div>
 <!-- badges: start -->
 
-<p>The goal of <code>pkgdownreprex</code> is to test different settings from the <code>pkgdown</code> package for rendering the website. It is algo going to be used in case a <code>reprex</code> is neeeded to be shared with the developers.</p>
+<p>The goal of <code>pkgdownreprex</code> is to test different settings from the <code>pkgdown</code> package for rendering the website. It is algo going to be used in case a <code>reprex</code> is needed to be shared with the developers.</p>
 <div id="package-creation-workflow" class="section level2">
 <h2 class="hasAnchor">
 <a href="#package-creation-workflow" class="anchor"></a>Package creation workflow:</h2>
 <ol>
 <li><p><code>usethis::create_package()</code></p></li>
 <li><p><code>usethis::use_mit_license()</code></p></li>
-<li>
-<p><code>gitignore::gi_fetch_templates(template_name = c("macOS", "R"), copy_to_clipboard = TRUE)</code></p>
-<ol>
-<li>Pasted it into <code>.gitignore</code>
-</li>
-</ol>
-</li>
+<li><p><code>gitignore::gi_fetch_templates(template_name = c("macOS", "R"), append_gitignore = TRUE)</code></p></li>
 <li><p><code>usethis::use_readme_rmd()</code></p></li>
 <li><p><code>usethis::use_pkgdown()</code></p></li>
 <li><p><code>usethis::use_vignette("pkgdownreprex")</code></p></li>
