@@ -12,7 +12,7 @@ status](https://github.com/fmmattioni/pkgdownreprex/workflows/R-CMD-check/badge.
 
 The goal of `pkgdownreprex` is to test different settings from the
 `pkgdown` package for rendering the website. It is algo going to be used
-in case a `reprex` is neeeded to be shared with the developers.
+in case a `reprex` is needed to be shared with the developers.
 
 ## Package creation workflow:
 
@@ -21,9 +21,7 @@ in case a `reprex` is neeeded to be shared with the developers.
 2.  `usethis::use_mit_license()`
 
 3.  `gitignore::gi_fetch_templates(template_name = c("macOS", "R"),
-    copy_to_clipboard = TRUE)`
-    
-    1.  Pasted it into `.gitignore`
+    append_gitignore = TRUE)`
 
 4.  `usethis::use_readme_rmd()`
 

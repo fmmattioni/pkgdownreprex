@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 [![R build status](https://github.com/fmmattioni/pkgdownreprex/workflows/R-CMD-check/badge.svg)](https://github.com/fmmattioni/pkgdownreprex/actions)
 <!-- badges: end -->
 
-The goal of `pkgdownreprex` is to test different settings from the `pkgdown` package for rendering the website. It is algo going to be used in case a `reprex` is neeeded to be shared with the developers.
+The goal of `pkgdownreprex` is to test different settings from the `pkgdown` package for rendering the website. It is algo going to be used in case a `reprex` is needed to be shared with the developers.
 
 ## Package creation workflow:
 
@@ -28,9 +28,7 @@ The goal of `pkgdownreprex` is to test different settings from the `pkgdown` pac
 
 1. `usethis::use_mit_license()`
 
-1. `gitignore::gi_fetch_templates(template_name = c("macOS", "R"), copy_to_clipboard = TRUE)`
-
-    1. Pasted it into `.gitignore`
+1. `gitignore::gi_fetch_templates(template_name = c("macOS", "R"), append_gitignore = TRUE)`
 
 1. `usethis::use_readme_rmd()`
 
