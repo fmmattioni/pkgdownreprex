@@ -1,0 +1,7 @@
+/*
+Make only first letter upper case in TOC
+https://github.com/r-lib/pkgdown/issues/1302
+*/
+nav[data-toggle='toc'] .nav > li > a {
+  text-transform: none !important;
+}
